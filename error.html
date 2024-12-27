@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin-top: 50px;
+            color: #f7dc6f;
+            animation: fadeInDown 2s;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            animation: fadeIn 3s;
+            color: #f3f3f3;
+        }
+
+        .home-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #f39c12;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: zoomIn 3s;
+        }
+
+        .home-link:hover {
+            background: #d35400;
+        }
+
+        .linkedin-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #0077b5;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: zoomIn 3s;
+            margin-left: 10px;
+        }
+
+        .linkedin-link:hover {
+            background: #005582;
+        }
+
+        .dino-game {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/8/8b/Google_Dino.png') no-repeat center center;
+            background-size: contain;
+            animation: jump 1.5s infinite;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes jump {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Oops! The page you're looking for doesn't exist.</p>
+    <a href="index.html" class="home-link">Go Back Home</a>
+    <a href="https://www.linkedin.com/in/raj-kumar-devops/" target="_blank" class="linkedin-link">Go to LinkedIn</a>
+    <div class="dino-game"></div>
+</body>
+</html>
